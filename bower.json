@@ -1,0 +1,23 @@
+{
+  "name": "hacker-news-react",
+  "version": "0.0.1",
+  "authors": [
+    "Rodrigo Fuenzalida <rfuenzalidac87@gmail.com>"
+  ],
+  "description": "front-end in reactjs for hacker news filter",
+  "main": "index.html",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

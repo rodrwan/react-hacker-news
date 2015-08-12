@@ -1,0 +1,29 @@
+{
+  "name": "Hacker News Filter",
+  "version": "0.0.1",
+  "manifest_version": 2,
+
+  "description": "Chrome extensions with ReactJS",
+  "icons": {
+    "16": "build/assets/images/icon48.png",
+    "48": "build/assets/images/icon48.png",
+    "128": "build/assets/images/icon48.png"
+  },
+  "browser_action": {
+    "default_icon": "build/assets/images/icon128.png",
+    "default_popup": "build/index.html",
+    "default_title": "Hacker News Filter"
+  },
+  "content_scripts": [ {
+  "js": [ "build/bundle.js" ],
+  "matches": [ "*://*/*" ],
+  "run_at": "document_start"
+  } ],
+  "web_accessible_resources": [
+    // "img/bg.jpg",
+    "build/assets/images/icon128.png"
+  ],
+  "minimum_chrome_version": "18",
+  "permissions": [ "http://*/*", "https://*/*", "unlimitedStorage", "contextMenus", "cookies", "tabs", "notifications" ]
+
+}
